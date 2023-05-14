@@ -178,7 +178,7 @@ def send_message(to_user, access_token, region_name, weather, temp, wind_dir, no
     # 获取所有生日数据
     birthdays = {}
     for k, v in config.items():
-        if k[0:5] == "birth":
+        if k[0:1] == "birth":
             birthdays[k] = v
     data = {
         "touser": to_user,
